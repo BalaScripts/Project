@@ -4,16 +4,15 @@ import { Card, Divider, TextField } from "@mui/material";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import Axios from "axios";
-import { Cloud, WbSunny, Opacity, CloudOutlined } from "@mui/icons-material"; 
+import { Cloud, WbSunny, Opacity, CloudOutlined } from "@mui/icons-material";
 import moment from "moment";
 
 const KEY = "ad4f32f6e2e63709a38b6d50bd12c7d1";
-
 const WeatherForecaste = () => {
   const [city, setCity] = useState("");
   const [forecastData, setForecastData] = useState([]);
   const [data, setData] = useState();
-  const [unit, setUnit] = useState("metric"); 
+  const [unit, setUnit] = useState("metric");
 
   const fetchData = async () => {
     try {

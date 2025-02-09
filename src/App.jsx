@@ -1,22 +1,11 @@
-import WeatherForecaste from "./WeatherForecast/WeatherForecaste"
-
-
-
-
+import WeatherForecaste from "./WeatherForecast/WeatherForecaste";
 
 function App() {
-  
-
   return (
     <>
-     
-
-   
-<WeatherForecaste />
-
-     
+      <WeatherForecaste />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
